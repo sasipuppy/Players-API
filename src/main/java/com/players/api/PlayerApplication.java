@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PlayerApplication {
 
 	/**
-	 * @param args
+	 * @param args parameters
 	 */
 	public static void main(String[] args) {
 		SpringApplication.run(PlayerApplication.class, args);

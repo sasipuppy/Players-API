@@ -19,7 +19,7 @@ public class PlayerService {
 	
 	/**
 	 * Get all players.
-	 * @return
+	 * @return player
 	 */
 	public List<Player> getAll(){
         List<Player> player = new ArrayList<>();
@@ -29,8 +29,8 @@ public class PlayerService {
 	
 	/**
 	 * Get a player by id.
-	 * @param id
-	 * @return
+	 * @param id Id of the player to be found
+	 * @return player
 	 */
 	public Player getPlayerById(long id) {
         if(playerRepository.existsById(id)){
@@ -41,7 +41,7 @@ public class PlayerService {
 	
 	/**
 	 * Add a player
-	 * @param player
+	 * @param player Player object with details of the player to be added
 	 */
 	public void addPlayer(Player player) {
 		playerRepository.save(player);
@@ -49,8 +49,8 @@ public class PlayerService {
 	
 	/**
 	 * Update a player by id.
-	 * @param id
-	 * @param player
+	 * @param id Id of the player to be updated
+	 * @param player Player object with details of the player to be updated
 	 */
 	public void updatePlayer(long id,Player player) {
 		if (playerRepository.existsById(id)){
@@ -66,7 +66,7 @@ public class PlayerService {
 	
 	/**
 	 * Delete a player by id.
-	 * @param id
+	 * @param id Id of the player to be deleted
 	 */
 	public void deletePlayer(long id){
         if (playerRepository.existsById(id)){

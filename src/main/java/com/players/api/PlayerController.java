@@ -23,7 +23,7 @@ public class PlayerController {
 	 
 	/**
 	 * Get all players.
-	 * @return
+	 * @return list of all the players 
 	 */
 	@RequestMapping(method = RequestMethod.GET, value = "/player")
 	    public List<Player> findAll(){
@@ -32,8 +32,8 @@ public class PlayerController {
 	 
 	/**
 	 * Get a single player based on id.
-	 * @param id
-	 * @return
+	 * @param id Id of the player to be found
+	 * @return single player record with specific id
 	 */
 	@RequestMapping(method = RequestMethod.GET, value = "/player/{id}")
 	    public Player getPlayerById(@PathVariable long id){
@@ -48,8 +48,8 @@ public class PlayerController {
 
 	/**
 	 * Add a player.
-	 * @param player
-	 * @return
+	 * @param player Player object with details of the player to be added
+	 * @return message indicating player addition.
 	 */
 	@RequestMapping(method = RequestMethod.POST, value = "/player")
 	    public String addPlayer(@RequestBody Player player){
@@ -75,9 +75,9 @@ public class PlayerController {
 	  
 	/**
 	 * Update player details based on id.
-	 * @param id
-	 * @param player
-	 * @return
+	 * @param id Id of the player to be updated
+	 * @param player Player object with details of the player to be updated
+	 * @return message indicating player update.
 	 */
 	@RequestMapping(method = RequestMethod.PUT, value = "/player/{id}")
 	    public String updatePlayer(@PathVariable long id,@RequestBody Player player) {
@@ -92,8 +92,8 @@ public class PlayerController {
 	  
 	/**
 	 * Delete a player based on id.
-	 * @param id
-	 * @return
+	 * @param id Id of the player to be deleted
+	 * @return message indicating player deletion.
 	 */
 	@RequestMapping(method = RequestMethod.DELETE, value = "/player/{id}")
 	    public String deletePerson(@PathVariable long id){

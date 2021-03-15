@@ -23,12 +23,12 @@ public class Player {
 	
 		
 	/**
-	 * constructor with five parameters 
-	 * @param firstName
-	 * @param lastName
-	 * @param age
-	 * @param gender
-	 * @param jersey
+	 * player constructor with five parameters 
+	 * @param firstName first name of the player
+	 * @param lastName  last name of the player
+	 * @param age age of the player
+	 * @param gender gender of the player
+	 * @param jersey jersey number of the player
 	 */
 	public Player(String firstName, String lastName, int age, String gender, int jersey) {
 		super();
@@ -40,7 +40,7 @@ public class Player {
 	}
 
 	/**
-	 * Default constructor
+	 * Default player constructor
 	 */
 	public Player() {
 		
@@ -48,7 +48,7 @@ public class Player {
 	
 	/**
 	 * Getter method for id field.
-	 * @return
+	 * @return id 
 	 */
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -58,7 +58,7 @@ public class Player {
 	
 	/**
 	 * Setter method for id field.
-	 * @param id
+	 * @param id player object id
 	 */
 	public void setId(long id) {
 		this.id = id;
@@ -66,7 +66,7 @@ public class Player {
 	
 	/**
 	 * getter method for first name field.
-	 * @return
+	 * @return firstName
 	 */
 	public String getFirstName() {
 		return firstName;
@@ -74,7 +74,7 @@ public class Player {
 	
 	/**
 	 * Setter method for first name field.
-	 * @param firstName
+	 * @param firstName first name of the player
 	 */
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
@@ -82,7 +82,7 @@ public class Player {
 	
 	/**
 	 * Getter method for last name field.
-	 * @return
+	 * @return lastName last name of the player.
 	 */
 	public String getLastName() {
 		return lastName;
@@ -90,7 +90,7 @@ public class Player {
 	
 	/**
 	 *Setter method for last name field.
-	 * @param lastName
+	 * @param lastName last name of the player.
 	 */
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
@@ -98,7 +98,7 @@ public class Player {
 	
 	/**
 	 * Getter method for age field.
-	 * @return
+	 * @return age
 	 */
 	public int getAge() {
 		return age;
@@ -106,7 +106,7 @@ public class Player {
 	
 	/**
 	 * Setter method for age field.
-	 * @param age
+	 * @param age age of the player.
 	 */
 	public void setAge(int age) {
 		this.age = age;
@@ -114,7 +114,7 @@ public class Player {
 	
 	/**
 	 * Getter method for gender field.
-	 * @return
+	 * @return gender
 	 */
 	public String getGender() {
 		return gender;
@@ -122,7 +122,7 @@ public class Player {
 
 	/**
 	 * Setter method for gender field.
-	 * @param gender
+	 * @param gender gender of the player.
 	 */
 	public void setGender(String gender) {
 		this.gender = gender;
@@ -130,7 +130,7 @@ public class Player {
 	
 	/**
 	 * Getter method for Jersey number.
-	 * @return
+	 * @return jersey
 	 */
 	public int getJersey() {
 		return jersey;
@@ -138,7 +138,7 @@ public class Player {
 	
 	/**
 	 * Setter method for Jersey number.
-	 * @param jersey
+	 * @param jersey jersey number of the player.
 	 */
 	public void setJersey(int jersey) {
 		this.jersey = jersey;
