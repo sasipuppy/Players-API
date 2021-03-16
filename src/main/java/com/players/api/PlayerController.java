@@ -68,7 +68,7 @@ public class PlayerController {
 	        	}
 	        	
 	        	 playerService.addPlayer(player);
-        		 return "Player Added!";
+        		 return "Player added!";
 	         }
 	        return null;
 	    } 
@@ -85,9 +85,9 @@ public class PlayerController {
 	        Player newPlayer = playerService.getPlayerById(id);
 	        if (newPlayer != null){
 	        	playerService.updatePlayer(id,player);
-	        return "Player Updated!";
+	        return "Player updated!";
 	        }
-	        return "Player does not exist";
+	        return "Player does not exist!";
 	    }
 	  
 	/**
@@ -100,9 +100,9 @@ public class PlayerController {
 	        Player player = playerService.getPlayerById(id);
 	        if (player != null){
 	            playerService.deletePlayer(id);
-	        return "Player deleted";
+	        return "Player deleted!";
 	        }
-	        return "Player does not exist";
+	        return "Player does not exist!";
 	    }
 	 
 }
